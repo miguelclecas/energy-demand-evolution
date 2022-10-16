@@ -6,9 +6,7 @@ SELECT
     gen.date) AS month,
   CASE
     WHEN EXTRACT(month FROM gen.date) < 4 THEN 'winter'
-    WHEN EXTRACT(month
-  FROM
-    gen.date) < 7 THEN 'spring'
+    WHEN EXTRACT(month FROM gen.date) < 7 THEN 'spring'
     WHEN EXTRACT(month FROM gen.date) < 10 THEN 'summer'
   ELSE
   'autumn'
